@@ -179,7 +179,7 @@ const translations = {
         ],
 
         kontakTitle: "Kontak",
-        kontakcontentTitle: "Hubungi Kami",
+        kontakcontentTitle: "Hubungi Saya",
         kontakcontentText: "Jangan ragu untuk menghubungi saya untuk pekerjaan atau saran apa pun di bawah ini.",
         kontakCardFormName: "Nama",
         kontakCardFormPesan: "Pesan",
