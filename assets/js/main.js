@@ -76,6 +76,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // animasi line experience
     animateExperienceSection(); 
 
+    const navLinks = document.querySelectorAll(".nav-links li a");
+    const navMenu = document.getElementById("nav-links");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            // hapus class 'show' supaya menu nutup
+            navMenu.classList.remove("show");
+        });
+    });
+
     // localstorage untuk bahasa
     const savedLang = localStorage.getItem("selectedLang") || "id";
     const dropdowns = document.querySelectorAll(".lang-dropdown");
