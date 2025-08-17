@@ -658,6 +658,18 @@ html, body {
     .title-experience-card {
         font-size: 1rem;
     }   
+
+    .card .periode {
+        font-size: 0.8rem;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+
+    .card ul li {
+        font-size: 0.8rem;
+    }
 }
 
 /* **************************************************************************************************** */
@@ -1102,6 +1114,44 @@ html, body {
     }
 }
 
+@media (max-width: 418px) {
+    .project-card p {
+        font-size: 0.8rem;
+    }
+
+    .project-card ul {
+        margin: 0;              
+        padding-left: 0;     
+        font-size: 0.8rem;
+        color: #dcdcdc;
+        list-style-type: none;  
+    }
+
+    .project-card ul li {
+        display: flex;
+        align-items: flex-start; 
+        margin-bottom: 8px;
+        font-size: 0.8rem;
+        list-style: none;
+        color: #dcdcdc;
+    }
+
+    .tech-stack span i {
+        font-size: 0.8rem;
+    }
+
+    .btn-link {
+        gap: 5px;               
+        padding: 8px 14px;      
+        font-size: 0.8rem;      
+        white-space: nowrap;
+    }
+
+    .btn-link i {
+        font-size: 0.9rem;        
+    }
+}
+
 /* *************************************************************************************************************************** */
 /* contact */
 
@@ -1265,6 +1315,40 @@ html, body {
     color: #7a5cff; /* warna highlight */
 }
 
+@media (max-width: 418px) {
+    .kontak-title {
+        display: inline-block;
+        font-size: 1.8rem;
+        color: #dcdcdc;
+        font-weight: 500;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .contact-title {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #dcdcdc;
+    }
+
+    .contact-list li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+    }
+
+    .contact-list li i {
+        font-size: 1.1rem;
+        color: #dcdcdc;
+    }
+
+    .btn-link-contact {
+        font-size: 0.9rem;
+    }
+}
+
 /* ****************************************************************************************************************** */
 /* footer */
 
@@ -1312,5 +1396,6 @@ html, body {
         margin-top: 10px;
     }
 }
+
 
 
