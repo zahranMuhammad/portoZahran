@@ -152,7 +152,7 @@ const translations = {
         heroDesc: "Fullstack Web Developer",
         heroDesc2: "Junior Fullstack Web Developer yang berfokus membangun aplikasi web modern dengan desain responsif dan kinerja optimal. Berpengalaman di frontend dan backend, cepat beradaptasi, mampu bekerja dalam tim, dan selalu bersemangat menciptakan solusi web yang optimal, efisien, serta memberikan pengalaman terbaik bagi pengguna.",
         experienceTitle: "Pengalaman Bekerja",
-        experiencePeriode: "Januari 2025 - Sekarang",
+        experiencePeriode: "Januari 2025 - Saat Ini",
         experienceList: [
             "Mengembangkan aplikasi web modern dengan desain responsif menggunakan CSS, Bootstrap, dan JavaScript",
             "Membangun backend menggunakan Laravel dan ASP.NET Core, termasuk logika aplikasi dan REST API",
