@@ -174,6 +174,7 @@ const translations = {
             "Halaman About Us berisi deskripsi singkat mengenai kelompok kami.",
             "Halaman Contact Us, di mana pengguna dapat mengirimkan data melalui form. Data yang dikirimkan akan otomatis tersimpan ke file Excel sehingga dapat kami pantau langsung di sana."
         ],
+        projectCardTitle2: "Kasir",
         projectCardText2: "Proyek aplikasi untuk mempermudah kasir dalam mengelola transaksi dan mengelola produk.",
         projectCardList2: [
             "Menyediakan fitur login dan logout untuk memastikan autentikasi dan keamanan akses pengguna dalam sistem.",
@@ -186,6 +187,14 @@ const translations = {
             "Fitur personalisasi berdasarkan akun pengguna, termasuk riwayat pembelian masing-masing user.",
             "Sistem login dengan pembatasan akses berdasarkan peran (user dan admin), serta dashboard admin untuk mengelola produk kopi, data pengguna, dan transaksi.",
             "Stok produk otomatis berkurang setiap kali terjadi pembelian oleh pengguna."
+        ],
+        projectCardTitle4: "API Aplikasi Kasir",
+        projectCardText4: "API yang dapat digunakan untuk aplikasi kasir, dengan fitur melakukan transaksi dan secara otomatis mengurangi stok ketika transaksi dilakukan oleh pengguna.",
+        projectCardList4: [
+            "Fitur login dan logout user, Dan get data profile user yang sedang login.",
+            "Fitur get produk, dan tambah produk.",
+            "Fitur transaksi produk, dan stok produk otomatis berkurang setiap kali terjadi pembelian oleh pengguna.",
+            "Fitur dokumentasi API menggunakan laravel swagger."
         ],
 
         kontakTitle: "Kontak",
@@ -227,6 +236,7 @@ const translations = {
             "About Us page containing a brief description of our team.",
             "Contact Us page, where users can submit data through a form. The submitted data is automatically saved to an Excel file, allowing us to monitor it directly."
         ],
+        projectCardTitle2: "Cashier",
         projectCardText2: "An application project designed to simplify cashier operations in managing transactions and product inventories.",
         projectCardList2: [
             "Provides login and logout functionality to ensure user authentication and secure access within the system.",
@@ -239,6 +249,14 @@ const translations = {
             "User personalization features, including individual purchase history tracking.",
             "A login system with role-based access control (user and admin), and an admin dashboard for managing coffee products, user data, and transactions.",
             "Product stock is automatically reduced with each user purchase."
+        ],
+        projectCardTitle4: "Cashier Application API",
+        projectCardText4: "An API that can be used for cashier applications, with features for making transactions and automatically reducing stock when transactions are made by users.",
+        projectCardList4: [
+            "User login and logout features, and get user profile data that is currently logged in.",
+            "Get product and add product features.",
+            "Product transaction features, and product stock is automatically reduced every time a user makes a purchase.",
+            "API documentation features using laravel swagger."
         ],
 
         kontakTitle: "Contact",
@@ -286,8 +304,7 @@ function setLanguage(lang, currentLangImg, langOptions) {
     document.querySelector(".container-skills .skill-4").textContent = translations[lang].skillTeknis4;
 
     // Project
-    document.querySelector(".container-skills .skill-4").textContent = translations[lang].skillTeknis4;
-
+    document.querySelector(".container-projects .projects-title").textContent = translations[lang].projects;
 
     // Contact
     document.querySelector(".container-contact .kontak-title").textContent = translations[lang].kontakTitle;
@@ -295,6 +312,7 @@ function setLanguage(lang, currentLangImg, langOptions) {
     document.querySelector(".container-contact .contact-text .context-text-p").textContent = translations[lang].kontakcontentText;
     document.querySelector(".container-contact .contact-card .nama").textContent = translations[lang].kontakCardFormName;
     document.querySelector(".container-contact .contact-card .pesan").textContent = translations[lang].kontakCardFormPesan;
+    document.querySelector(".container-contact .contact-card .btn-kirim").textContent = translations[lang].kontakCardFormButton;
 
     // Placeholder form
     document.getElementById("name").placeholder = translations[lang].kontakCardFormName;
@@ -312,6 +330,8 @@ function setLanguage(lang, currentLangImg, langOptions) {
     
     document.querySelector(".projects-cards .project-card-p2").textContent = translations[lang].projectCardText2;
     const ul2 = document.querySelector(".project-card-list2");
+    const title2 = document.querySelector(".project-card-title-2");
+    title2.textContent = translations[lang].projectCardTitle2;
     ul2.innerHTML = "";
     translations[lang].projectCardList2.forEach(item => {
         const li = document.createElement("li");
@@ -326,6 +346,17 @@ function setLanguage(lang, currentLangImg, langOptions) {
         const li = document.createElement("li");
         li.textContent = item;
         ul3.appendChild(li);
+    });
+
+    document.querySelector(".projects-cards .project-card-p4").textContent = translations[lang].projectCardText3;
+    const ul4 = document.querySelector(".project-card-list4");
+    const title4 = document.querySelector(".project-card-title-4");
+    title4.textContent = translations[lang].projectCardTitle4;
+    ul4.innerHTML = "";
+    translations[lang].projectCardList4.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ul4.appendChild(li);
     });
     
     // Tutup dropdown setelah pilih
